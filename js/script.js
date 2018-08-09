@@ -27,7 +27,7 @@ var Counter = React.createClass({
 var Counter2 = React.createClass({
     getInitialState: function() {
         return {
-            counter2: 20
+            counter: 20
         };
     },
 
