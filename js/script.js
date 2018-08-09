@@ -27,7 +27,7 @@ var Counter = React.createClass({
 var Counter2 = React.createClass({
     getInitialState: function() {
         return {
-            counter: 20
+            counter2: 20
         };
     },
 
@@ -50,11 +50,8 @@ var Counter2 = React.createClass({
     }
 });
 
-var element = (
-    <div>
-      <h1>{Counter}</h1>
-      <h1>{Counter2}</h1>
-    </div>
-)
+var element = React.createElement(Counter);
 ReactDOM.render(element, document.getElementById('app'));
 
+var element2 = React.createElement(Counter2);
+ReactDOM.render(element2, document.getElementById('app2'));
